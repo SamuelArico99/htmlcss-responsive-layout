@@ -135,4 +135,23 @@ nav ul li {
     border: 1px solid black;
     margin-top: 20px;
 }
+/* ABOUT US */
+#about-us > .container{
+display: flex;
+}
+.us, .photo-us{
+    background-color: chocolate;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+}
+.us{
+    width: 70%;
+}
+.photo-us{
+    width: 30%;
+    height: 50px;
+}
 /* FOOTER */
