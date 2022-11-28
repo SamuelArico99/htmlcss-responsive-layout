@@ -118,4 +118,21 @@ nav ul li {
 .photo{
     width: 30%;
 }
+/* BENEFITS */
+#benefits{
+    background-color: #9792e4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#benefits > .container{
+    flex-wrap: wrap;
+}
+.benefit{
+    width: 33%;
+    height: 80px;
+    background-color: chocolate;
+    border: 1px solid black;
+    margin-top: 20px;
+}
 /* FOOTER */
