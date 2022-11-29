@@ -117,48 +117,78 @@ header > .container{
 #strategic > .container{
     padding: 0 5%;
 }
+#strategic > .container > .box1 > img{
+    margin-bottom: 20px;
+}
 .box1 > img{
     width: 80%;
 }
+.box2 > img{
+    width: 50%;
+}
 .box1, .box2{
     width: 50%;
-    background-color: chocolate;
-    border:  1px solid black;
+}
+.box2 > p{
+    text-align: center;
+    font-style: italic;
 }
 .box2{
+    background-color: white;
+    border-radius: 20px;
     height: 60%;
     align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
 }
 .box1{
     height: 100%;
+    color: white;
+}
+.box2 > i {
+    background-color: #9792e4;
+    color: black;
+    padding: 10px;
+    border-radius: 100%;
 }
 /* TESTIMONIALS */
 #testimonials > .container{
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     border: 1px solid;
-    height: 400px;
+}
+#testimonials > .container > h2{
+    color:#9792e4 ;
 }
 .collab{
     background-color:#9792e4 ;
+    border-radius: 30px;
     width: 100%;
-    height: 33%;
-    border: 1px solid black;
     display: flex;
     margin-top: 20px;
+    padding: 20px 0;
 }
 .photo , .description{
-    border: 1px solid black;
-    background-color: brown;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 .description{
     width: 70%;
+    font-size: 20px;
+    color: white;
 }
 .photo{
     width: 30%;
+    align-items: center;
+}
+.photo > img{
+    width: 80%;
+    border-radius: 50%;
 }
 /* BENEFITS */
 #benefits{
@@ -179,7 +209,7 @@ header > .container{
 }
 /* ABOUT US */
 #about-us > .container{
-display: flex;
+    display: flex;
 }
 .us, .photo-us{
     background-color: chocolate;
@@ -246,6 +276,10 @@ footer > .container{
     .benefit{
         width: 48%;
     }
+    .us, .photo-us{
+        margin: 0;
+        width: 48%;
+    }
 }
 @media screen and (max-width: 425px) {
     .container:not(header > .container){
@@ -259,4 +293,18 @@ footer > .container{
         width: 100%;
         height: 30px;  
     }
+    .cards, .card, .us, .photo-us, .benefit{
+        width: 100%;
+    }
+    .photo{
+        height: 30%;
+    }
+    .description{
+        height: 70%;
+        width: 100%;
+    }
+    #start > .container{
+        width: 100%;
+    }
+    
 }
