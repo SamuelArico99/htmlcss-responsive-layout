@@ -128,6 +128,7 @@ header > .container{
 }
 .box1, .box2{
     width: 50%;
+    margin-bottom: 30px;
 }
 .box2 > p{
     text-align: center;
@@ -142,7 +143,6 @@ header > .container{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 30px;
 }
 .box1{
     height: 100%;
@@ -197,15 +197,33 @@ header > .container{
     flex-direction: column;
     align-items: center;
 }
+#benefits > h2{
+    color: white;
+}
 #benefits > .container{
     flex-wrap: wrap;
 }
 .benefit{
     width: 33%;
-    height: 80px;
-    background-color: chocolate;
-    border: 1px solid black;
-    margin-top: 20px;
+    background-color:white;
+    border-radius: 20px;
+    margin:20px 0;
+    padding: 15px;
+}
+.benefit > h1, .benefit > h3{
+    color: #9792e4;
+}
+.benefit > h1{
+    font-size: 40px;
+}
+.benefit > button{
+    text-align: center;
+    width: 30%;
+    background-color:#9792e4;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
 }
 /* ABOUT US */
 #about-us > .container{
