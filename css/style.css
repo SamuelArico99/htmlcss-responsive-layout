@@ -159,7 +159,6 @@ header > .container{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid;
 }
 #testimonials > .container > h2{
     color:#9792e4 ;
@@ -228,21 +227,45 @@ header > .container{
 /* ABOUT US */
 #about-us > .container{
     display: flex;
+    justify-content: center;
 }
 .us, .photo-us{
-    background-color: chocolate;
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin: 30px;
 }
 .us{
-    width: 70%;
+    width: 60%;
+    font-size: 25px;
+}
+.us > h1{
+    color: #9792e4;
+    font-size: 60px;
 }
 .photo-us{
     width: 30%;
-    height: 50px;
+}
+.photo-us > img{
+    width: 100%;
+    height: 70%;
+    border-radius: 50%;
+}
+.photo-us > h2{
+    margin-top: 10px;
+    color: #9792e4;
+
+}
+.photo-us > button{
+    background-color:#9792e4;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+
+}
+.photo-us > button > i{
+    color: white;
+    height: 10px;
+    margin: 0;
 }
 /* START */
 #start{
@@ -296,7 +319,10 @@ footer > .container{
     }
     .us, .photo-us{
         margin: 0;
-        width: 48%;
+        width: 50%;
+    }
+    .photo-us > img{
+        height: 20%;
     }
 }
 @media screen and (max-width: 425px) {
